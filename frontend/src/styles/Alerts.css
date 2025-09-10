@@ -1,0 +1,28 @@
+.table-container {
+	background: #0f172a;
+	border-radius: 8px;
+	padding: 12px;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset;
+}
+
+.alerts-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+
+.alerts-table th, .alerts-table td {
+	text-align: left;
+	padding: 10px;
+	border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.badge {
+	padding: 2px 8px;
+	border-radius: 999px;
+	font-size: 12px;
+}
+
+.badge--high { background: #ef4444; color: #fff; }
+.badge--medium { background: #f59e0b; color: #111; }
+.badge--low { background: #10b981; color: #0b1020; }

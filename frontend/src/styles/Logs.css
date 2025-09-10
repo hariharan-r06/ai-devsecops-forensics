@@ -1,0 +1,15 @@
+.logs-container {
+	background: #0f172a;
+	border-radius: 8px;
+	padding: 12px;
+	height: 360px;
+	overflow: auto;
+}
+
+.logs-pre {
+	margin: 0;
+	white-space: pre-wrap;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 13px;
+	color: #e5e7eb;
+}
