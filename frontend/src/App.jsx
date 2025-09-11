@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
@@ -10,12 +10,17 @@ import Settings from './pages/Settings';
 import './styles/Layout.css';
 
 function App() {
+	const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+	const toggleSidebar = () => setIsSidebarOpen((prev) => !prev);
+	const closeSidebar = () => setIsSidebarOpen(false);
+
 	return (
-		<div className="app-layout">
-			<Navbar />
+		<div className={`app-layout ${isSidebarOpen ? 'drawer-open' : ''}`}>
+			<Navbar onToggleSidebar={toggleSidebar} />
 			<div className="app-body">
-				<Sidebar />
-				<main className="app-content">
+				<Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+				<main className="app-content" onClick={closeSidebar}>
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="/alerts" element={<Alerts />} />
