@@ -1,5 +1,15 @@
 .home {
-	background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 40%);
-	padding: 8px;
-	border-radius: 8px;
-}
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%);
+	padding: clamp(0.5rem, 0.75rem, 1.5vw); /* Corrected order */
+	border-radius: var(--border-radius);
+  }
+  
+  /* Responsive adjustments for home page */
+  @media screen and (max-width: 767px) {
+	.home {
+	  padding: 0.5rem;
+	  margin: 0 -0.5rem;
+	  border-radius: 0;
+	}
+  }
+  
