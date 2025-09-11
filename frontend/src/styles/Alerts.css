@@ -40,7 +40,7 @@
 .badge--medium { background: #f59e0b; color: #111; }
 .badge--low { background: #10b981; color: #0b1020; }
 
-/* Desktop: Full table view */
+
 @media screen and (min-width: 1024px) {
 	.alerts-table { 
 		font-size: 0.95rem; 
@@ -48,7 +48,6 @@
 	}
 }
 
-/* Tablet: Slightly smaller */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
 	.alerts-table { 
 		font-size: 0.9rem; 
@@ -78,7 +77,7 @@
 	}
 }
 
-/* Extra small mobile: Very compact */
+
 @media screen and (max-width: 480px) {
 	.alerts-table { 
 		font-size: 0.8rem; 
