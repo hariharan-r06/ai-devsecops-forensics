@@ -17,8 +17,8 @@
 	margin: 0 0 0.5rem 0;
 	font-size: clamp(1rem, 2vw, 1.125rem);
 	font-weight: 600;
-	color: #e5e7eb;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	color: var(--text);
+	border-bottom: 1px solid var(--border);
 	padding-bottom: 0.5rem;
 }
 
@@ -27,6 +27,7 @@
 	gap: clamp(0.25rem, 1vw, 0.375rem); 
 	font-size: clamp(0.875rem, 1.5vw, 0.95rem);
 	font-weight: 500;
+	color: var(--text);
 }
 
 .settings-form input,
@@ -58,6 +59,7 @@
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row !important;
+	color: var(--text);
 }
 
 .toggle-switch {
