@@ -74,7 +74,7 @@
 }
 
 .search-input::placeholder {
-	color: #9ca3af;
+	color: var(--muted);
 }
 
 .search-icon {
@@ -82,7 +82,7 @@
 	right: 0.75rem;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #9ca3af;
+	color: var(--muted);
 	pointer-events: none;
 }
 
